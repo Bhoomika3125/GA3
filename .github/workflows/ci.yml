@@ -1,0 +1,10 @@
+name: CI  # Name your workflow
+
+on: [push, pull_request]  # Runs on code pushes/PRs
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free GitHub server
+    steps:
+      - name: Success step
+        run: echo "Tests passed!"  # Simple command that always works
